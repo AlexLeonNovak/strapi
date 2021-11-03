@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_faq_single_faqs",
+  "info": {
+    "name": "Single_faq",
+    "icon": "question-circle",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Question": {
+      "type": "string"
+    },
+    "Answer": {
+      "type": "text"
+    },
+    "Featured": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

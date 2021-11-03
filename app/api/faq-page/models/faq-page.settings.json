@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "faq_pages",
+  "info": {
+    "name": "FAQ_page"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "QA": {
+      "type": "component",
+      "repeatable": true,
+      "component": "faq.single-faq"
+    }
+  }
+}

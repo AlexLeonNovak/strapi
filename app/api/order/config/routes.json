@@ -1,0 +1,14 @@
+{
+  "routes": [
+    {
+      "method": "POST",
+      "path": "/orders/create-subscription",
+      "handler": "order.createSubscription"
+    },
+    {
+      "method": "POST",
+      "path": "/orders/webhook",
+      "handler": "order.webhook"
+    }
+  ]
+}

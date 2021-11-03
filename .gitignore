@@ -1,0 +1,7 @@
+data
+dumps
+documentation
+documentation/**/*
+
+.idea
+tmp

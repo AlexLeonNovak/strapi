@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "release_notes",
+  "info": {
+    "name": "Release Note",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "featured_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "excerpt": {
+      "type": "richtext"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "draft",
+        "published"
+      ]
+    },
+    "slug": {
+      "type": "string",
+      "unique": true
+    },
+    "features": {
+      "type": "text"
+    },
+    "bugs": {
+      "type": "text"
+    },
+    "version": {
+      "type": "string"
+    }
+  }
+}

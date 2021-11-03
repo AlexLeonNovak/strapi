@@ -1,0 +1,12 @@
+{
+    "routes": [
+      {
+        "method": "GET",
+        "path": "/cards/:id",
+        "handler": "card.findOne",
+        "config": {
+          "policies": []
+        }
+      }
+    ]
+  }

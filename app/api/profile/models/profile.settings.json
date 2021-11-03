@@ -1,0 +1,281 @@
+{
+  "kind": "collectionType",
+  "collectionName": "profiles",
+  "info": {
+    "name": "Profile",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "user": {
+      "via": "profile",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "full_agent_name": {
+      "type": "string"
+    },
+    "agent_id": {
+      "type": "string"
+    },
+    "agent_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "tel": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "site_url": {
+      "type": "string"
+    },
+    "address_line_1": {
+      "type": "string"
+    },
+    "address_line_2": {
+      "type": "string"
+    },
+    "favicon": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "tracking_codes": {
+      "type": "text"
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "second_logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "facebook": {
+      "type": "string"
+    },
+    "twitter": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string"
+    },
+    "youtube": {
+      "type": "string"
+    },
+    "agent_bio_rich_text": {
+      "type": "richtext"
+    },
+    "paragon_id": {
+      "type": "string"
+    },
+    "facebook_config": {
+      "type": "json"
+    },
+    "office_id": {
+      "type": "string"
+    },
+    "mailchimp_subscription_url": {
+      "type": "string"
+    },
+    "agent_color": {
+      "type": "string"
+    },
+    "domain_set_up": {
+      "type": "boolean",
+      "default": false
+    },
+    "linkedin": {
+      "type": "string"
+    },
+    "brokerage_name": {
+      "type": "string"
+    },
+    "brokerage_address": {
+      "type": "string"
+    },
+    "brokerage_phone": {
+      "type": "string"
+    },
+    "brokerage_website": {
+      "type": "string"
+    },
+    "brokerage_logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "agent_awards": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "hero_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "branding": {
+      "type": "json"
+    },
+    "profile_slug": {
+      "type": "string",
+      "unique": true
+    },
+    "login_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "site_tagline": {
+      "type": "string"
+    },
+    "logo_link": {
+      "type": "string"
+    },
+    "layout": {
+      "type": "json"
+    },
+    "my_listings_title": {
+      "type": "string"
+    },
+    "target_city": {
+      "type": "string"
+    },
+    "office_address": {
+      "type": "json"
+    },
+    "agent_image_circle": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "data_feed": {
+      "type": "enumeration",
+      "enum": [
+        "Leagent",
+        "RealtyNA"
+      ]
+    },
+    "footer_categories": {
+      "type": "json"
+    },
+    "search_highlights": {
+      "type": "json"
+    },
+    "first_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "card_uid": {
+      "type": "biginteger",
+      "unique": true
+    },
+    "card_name": {
+      "type": "string"
+    },
+    "card_job_title": {
+      "type": "string"
+    },
+    "card_logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "videos",
+        "files"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "card_is_printed": {
+      "type": "boolean"
+    },
+    "card_shipping_address": {
+      "type": "json"
+    },
+    "listings": {
+      "collection": "listings",
+      "via": "profile"
+    },
+    "clients": {
+      "via": "realtor",
+      "plugin": "users-permissions",
+      "collection": "user"
+    }
+  }
+}

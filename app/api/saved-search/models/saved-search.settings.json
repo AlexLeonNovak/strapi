@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "saved_searches",
+  "info": {
+    "name": "Saved Search",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Last_email": {
+      "type": "datetime"
+    },
+    "Saved_date": {
+      "type": "datetime"
+    },
+    "users_permissions_user": {
+      "via": "saved_searches",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "Search_query": {
+      "type": "text"
+    }
+  }
+}

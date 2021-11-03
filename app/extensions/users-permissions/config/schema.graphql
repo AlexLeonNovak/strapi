@@ -1,0 +1,60 @@
+  
+'use strict';
+
+const _ = require('lodash');
+
+/**
+ * Throws an ApolloError if context body contains a bad request
+ * @param contextBody - body of the context object given to the resolver
+ * @throws ApolloError if the body is a bad request
+ */
+function checkBadRequest(contextBody) {
+  if (_.get(contextBody, 'statusCode', 200) !== 200) {
+    const message = _.get(contextBody, 'error', 'Bad Request');
+    const exception = new Error(message);
+    exception.code = _.get(contextBody, 'statusCode', 400);
+    exception.data = contextBody;
+    throw exception;
+  }
+}
+
+module.exports = {
+  definition: `
+    extend type UsersPermissionsMe {
+      name: String
+      phone_number: String
+      metadata: JSON
+      user_type: String
+      signup_host: String
+    }
+    extend input UsersPermissionsRegisterInput {
+      name: String
+      phone_number: String
+      user_type: String
+      signup_host: String
+    }
+  `,
+  mutation: `
+    customForgotPassword(email: String!, client_url: String!): UserPermissionsPasswordPayload
+  `,
+  resolver: {
+    Mutation: {
+      customForgotPassword: {
+        description: 'Request a reset password token',
+        resolverOf: 'plugins::users-permissions.auth.customForgotPassword',
+        resolver: async (obj, options, { context }) => {
+          context.request.body = _.toPlainObject(options);
+
+          await strapi.plugins['users-permissions'].controllers.auth.customForgotPassword(context);
+          let output = context.body.toJSON ? context.body.toJSON() : context.body;
+
+          checkBadRequest(output);
+
+          return {
+            ok: output.ok || output,
+          };
+        },
+      },
+    }
+  }  
+} 

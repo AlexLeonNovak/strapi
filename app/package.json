@@ -1,0 +1,42 @@
+{
+  "name": "app",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "knex": "<0.20.0",
+    "pg": "^8.3.3",
+    "strapi": "3.6.5",
+    "strapi-admin": "3.6.5",
+    "strapi-connector-bookshelf": "3.6.5",
+    "strapi-plugin-content-manager": "3.6.5",
+    "strapi-plugin-content-type-builder": "3.6.5",
+    "strapi-plugin-documentation": "3.6.5",
+    "strapi-plugin-email": "3.6.5",
+    "strapi-plugin-email-designer": "^1.1.6",
+    "strapi-plugin-graphql": "3.6.5",
+    "strapi-plugin-upload": "3.6.5",
+    "strapi-plugin-users-permissions": "3.6.5",
+    "strapi-provider-email-amazon-ses": "3.6.5",
+    "strapi-utils": "3.6.5",
+    "stripe": "^8.97.0"
+  },
+  "author": {
+    "name": "Muhammad Abdullah Abid"
+  },
+  "strapi": {
+    "uuid": "b7aab230-f0dc-4c70-a1d0-e0a4760c9e97"
+  },
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

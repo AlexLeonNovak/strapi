@@ -1,0 +1,2282 @@
+{
+  "kind": "collectionType",
+  "collectionName": "listings",
+  "info": {
+    "name": "Listings",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "profile": {
+      "via": "listings",
+      "model": "profile"
+    },
+    "Address": {
+      "type": "string"
+    },
+    "AddressDirection": {
+      "type": "string"
+    },
+    "AddressNumber": {
+      "type": "string"
+    },
+    "AddressNumberLow": {
+      "type": "string"
+    },
+    "AddressStreet": {
+      "type": "string"
+    },
+    "AddressUnit": {
+      "type": "string"
+    },
+    "AgeType": {
+      "type": "string"
+    },
+    "Area": {
+      "type": "string"
+    },
+    "AskingPrice": {
+      "type": "float"
+    },
+    "B_AccessToProperty": {
+      "type": "string"
+    },
+    "B_Amenities": {
+      "type": "json"
+    },
+    "B_ArchitecturalStyle": {
+      "type": "string"
+    },
+    "B_AreaTotal": {
+      "type": "float"
+    },
+    "B_AreaUnits": {
+      "type": "string"
+    },
+    "B_Basement": {
+      "type": "json"
+    },
+    "B_Bylaws": {
+      "type": "string"
+    },
+    "B_CableService": {
+      "type": "string"
+    },
+    "B_CarportSpaces": {
+      "type": "float"
+    },
+    "B_CarportYN": {
+      "type": "boolean"
+    },
+    "B_Construction": {
+      "type": "json"
+    },
+    "B_ConstructionMaterials": {
+      "type": "string"
+    },
+    "B_CouncilApprove": {
+      "type": "string"
+    },
+    "B_Depth": {
+      "type": "string"
+    },
+    "B_Direction": {
+      "type": "string"
+    },
+    "B_Direction_Yard": {
+      "type": "string"
+    },
+    "B_Exterior_Finish": {
+      "type": "json"
+    },
+    "B_Features": {
+      "type": "string"
+    },
+    "B_Fencing": {
+      "type": "string"
+    },
+    "B_Heating": {
+      "type": "json"
+    },
+    "B_HeatingYN": {
+      "type": "boolean"
+    },
+    "B_InfoPackageAvailable": {
+      "type": "string"
+    },
+    "B_LandReserve": {
+      "type": "string"
+    },
+    "B_Land_Direction": {
+      "type": "string"
+    },
+    "B_Maintenance_Includes": {
+      "type": "string"
+    },
+    "B_NewConstructionYN": {
+      "type": "boolean"
+    },
+    "B_NumberofUnitsInBuilding": {
+      "type": "float"
+    },
+    "B_Out_Barn_Size": {
+      "type": "string"
+    },
+    "B_Out_Door_Height": {
+      "type": "string"
+    },
+    "B_Out_Garage_Size": {
+      "type": "string"
+    },
+    "B_Out_Pool_Size": {
+      "type": "string"
+    },
+    "B_Out_WorkshopShed_Size": {
+      "type": "string"
+    },
+    "B_OutdoorArea": {
+      "type": "json"
+    },
+    "B_Parking_Access": {
+      "type": "json"
+    },
+    "B_Parking_Type": {
+      "type": "json"
+    },
+    "B_PercTest_AvailableYN": {
+      "type": "string"
+    },
+    "B_PermitApproved": {
+      "type": "string"
+    },
+    "B_Plans": {
+      "type": "string"
+    },
+    "B_Restrictions": {
+      "type": "string"
+    },
+    "B_RezoningPotential": {
+      "type": "string"
+    },
+    "B_Roof": {
+      "type": "json"
+    },
+    "B_ServicesConnected": {
+      "type": "json"
+    },
+    "B_SignOnPropertyYN": {
+      "type": "string"
+    },
+    "B_SiteInfluences": {
+      "type": "json"
+    },
+    "B_SketchAttached": {
+      "type": "string"
+    },
+    "B_Stories": {
+      "type": "float"
+    },
+    "B_Style": {
+      "type": "json"
+    },
+    "B_Suite": {
+      "type": "json"
+    },
+    "B_TotalUnits": {
+      "type": "float"
+    },
+    "B_WaterSupply": {
+      "type": "json"
+    },
+    "BathroomsTotalDecimal": {
+      "type": "float"
+    },
+    "BathroomsTotalInteger": {
+      "type": "float"
+    },
+    "Biz_BedAndBreakfast": {
+      "type": "string"
+    },
+    "Biz_Chattels": {
+      "type": "string"
+    },
+    "Biz_CommercialArea": {
+      "type": "string"
+    },
+    "Biz_CommercialListingType": {
+      "type": "string"
+    },
+    "Biz_ExistingLeaseType": {
+      "type": "string"
+    },
+    "Biz_GrossIncome": {
+      "type": "float"
+    },
+    "Biz_Name": {
+      "type": "string"
+    },
+    "Biz_NetOperatingIncome": {
+      "type": "float"
+    },
+    "Biz_OperatingExpense": {
+      "type": "float"
+    },
+    "Biz_OtherEquipment": {
+      "type": "string"
+    },
+    "Biz_Type": {
+      "type": "string"
+    },
+    "Biz_ValueFixedEquipment": {
+      "type": "float"
+    },
+    "Biz_ValueGoodwill": {
+      "type": "float"
+    },
+    "Biz_ValueInventory": {
+      "type": "float"
+    },
+    "Biz_YearEstablished": {
+      "type": "float"
+    },
+    "BridgeModificationTimestamp": {
+      "type": "date"
+    },
+    "BuyerAgencyCompensation": {
+      "type": "string"
+    },
+    "BuyerAgentAOR": {
+      "type": "string"
+    },
+    "BuyerAgentDirectPhone": {
+      "type": "string"
+    },
+    "BuyerAgentEmail": {
+      "type": "string"
+    },
+    "BuyerAgentFullName": {
+      "type": "string"
+    },
+    "BuyerAgentKeyNumeric": {
+      "type": "float"
+    },
+    "BuyerAgentMlsId": {
+      "type": "string"
+    },
+    "BuyerAgentOfficePhone": {
+      "type": "string"
+    },
+    "BuyerOfficeAOR": {
+      "type": "string"
+    },
+    "BuyerOfficeKeyNumeric": {
+      "type": "float"
+    },
+    "BuyerOfficeMlsId": {
+      "type": "string"
+    },
+    "BuyerOfficeName": {
+      "type": "string"
+    },
+    "BuyerOfficePhone": {
+      "type": "string"
+    },
+    "CDOM": {
+      "type": "long"
+    },
+    "CDOMLS": {
+      "type": "float"
+    },
+    "CSA_BCE": {
+      "type": "string"
+    },
+    "City": {
+      "type": "string"
+    },
+    "ClosingDate": {
+      "type": "date"
+    },
+    "CoListAgentKeyNumeric": {
+      "type": "float"
+    },
+    "CoListAgentOfficePhone": {
+      "type": "string"
+    },
+    "CoListOfficeKeyNumeric": {
+      "type": "float"
+    },
+    "Coordinates": {
+      "type": "float"
+    },
+    "CountyOrParish": {
+      "type": "string"
+    },
+    "DOM": {
+      "type": "long"
+    },
+    "DOMLS": {
+      "type": "float"
+    },
+    "Dev_Permit": {
+      "type": "string"
+    },
+    "DistanceToTransit": {
+      "type": "string"
+    },
+    "DistancetoSchoolOrBus": {
+      "type": "string"
+    },
+    "DrivewayFinish": {
+      "type": "string"
+    },
+    "ElectricOnPropertyYN": {
+      "type": "boolean"
+    },
+    "EntryLocation": {
+      "type": "string"
+    },
+    "ExpirationDate": {
+      "type": "date"
+    },
+    "FloodPlain": {
+      "type": "string"
+    },
+    "ForTaxYear": {
+      "type": "float"
+    },
+    "Foundation": {
+      "type": "string"
+    },
+    "IdxInclude": {
+      "type": "string"
+    },
+    "InputDate": {
+      "type": "date"
+    },
+    "LA1_Email": {
+      "type": "string"
+    },
+    "LA1_FullName": {
+      "type": "string"
+    },
+    "LA1_LoginName": {
+      "type": "string"
+    },
+    "LA1_NationalAssociationID": {
+      "type": "string"
+    },
+    "LA1_PhoneNumber1": {
+      "type": "string"
+    },
+    "LA1_UserFirstName": {
+      "type": "string"
+    },
+    "LA1_UserLastName": {
+      "type": "string"
+    },
+    "LA1_WebPage": {
+      "type": "string"
+    },
+    "LA2_Board": {
+      "type": "string"
+    },
+    "LA2_Email": {
+      "type": "string"
+    },
+    "LA2_FullName": {
+      "type": "string"
+    },
+    "LA2_LoginName": {
+      "type": "string"
+    },
+    "LA2_PhoneNumber1": {
+      "type": "string"
+    },
+    "LA2_UserFirstName": {
+      "type": "string"
+    },
+    "LA2_UserLastName": {
+      "type": "string"
+    },
+    "LA2_WebPage": {
+      "type": "string"
+    },
+    "LA3_Board": {
+      "type": "string"
+    },
+    "LA3_Email": {
+      "type": "string"
+    },
+    "LA3_FullName": {
+      "type": "string"
+    },
+    "LA3_LoginName": {
+      "type": "string"
+    },
+    "LA3_NationalAssociationID": {
+      "type": "string"
+    },
+    "LA3_PhoneNumber1": {
+      "type": "string"
+    },
+    "LA3_WebPage": {
+      "type": "string"
+    },
+    "LA_NationalAssocitionID": {
+      "type": "string"
+    },
+    "LFD_Amenities_56": {
+      "type": "json"
+    },
+    "LFD_Amenities_86": {
+      "type": "text"
+    },
+    "LFD_BasementArea_6": {
+      "type": "json"
+    },
+    "LFD_BasementArea_68": {
+      "type": "text"
+    },
+    "LFD_ByLawRestrictions_88": {
+      "type": "text"
+    },
+    "LFD_BylawRestrictions_58": {
+      "type": "json"
+    },
+    "LFD_Construction_41": {
+      "type": "json"
+    },
+    "LFD_Construction_72": {
+      "type": "text"
+    },
+    "LFD_DirectionalExpFaces_59": {
+      "type": "text"
+    },
+    "LFD_DirectionalExpFaces_89": {
+      "type": "text"
+    },
+    "LFD_DirectionalExpRearYard_71": {
+      "type": "text"
+    },
+    "LFD_DirectionalExpRearYard_9": {
+      "type": "json"
+    },
+    "LFD_DrivewayFinish_152": {
+      "type": "json"
+    },
+    "LFD_DrivewayFinish_153": {
+      "type": "text"
+    },
+    "LFD_ExteriorFinish_42": {
+      "type": "json"
+    },
+    "LFD_ExteriorFinish_73": {
+      "type": "text"
+    },
+    "LFD_FeaturesIncluded_142": {
+      "type": "text"
+    },
+    "LFD_FeaturesIncluded_55": {
+      "type": "json"
+    },
+    "LFD_FeaturesIncluded_85": {
+      "type": "text"
+    },
+    "LFD_FireplaceFueledby_49": {
+      "type": "text"
+    },
+    "LFD_FireplaceFueledby_80": {
+      "type": "text"
+    },
+    "LFD_FloorFinish_19": {
+      "type": "json"
+    },
+    "LFD_FloorFinish_50": {
+      "type": "json"
+    },
+    "LFD_Foundation_155": {
+      "type": "json"
+    },
+    "LFD_Foundation_156": {
+      "type": "json"
+    },
+    "LFD_Foundation_157": {
+      "type": "text"
+    },
+    "LFD_FuelHeating_48": {
+      "type": "json"
+    },
+    "LFD_FuelHeating_79": {
+      "type": "text"
+    },
+    "LFD_MaintFeeIncludes_57": {
+      "type": "json"
+    },
+    "LFD_MaintFeeIncludes_87": {
+      "type": "text"
+    },
+    "LFD_OutdoorArea_146": {
+      "type": "text"
+    },
+    "LFD_OutdoorArea_47": {
+      "type": "json"
+    },
+    "LFD_OutdoorArea_78": {
+      "type": "text"
+    },
+    "LFD_ParkingAccess_45": {
+      "type": "text"
+    },
+    "LFD_ParkingAccess_76": {
+      "type": "text"
+    },
+    "LFD_ParkingAccess_97": {
+      "type": "text"
+    },
+    "LFD_Parking_44": {
+      "type": "json"
+    },
+    "LFD_Parking_75": {
+      "type": "text"
+    },
+    "LFD_Renovations_4": {
+      "type": "json"
+    },
+    "LFD_Renovations_66": {
+      "type": "text"
+    },
+    "LFD_Roof_43": {
+      "type": "json"
+    },
+    "LFD_Roof_74": {
+      "type": "text"
+    },
+    "LFD_ServicesConnected_7": {
+      "type": "json"
+    },
+    "LFD_SiteInfluences_46": {
+      "type": "text"
+    },
+    "LFD_SiteInfluences_77": {
+      "type": "text"
+    },
+    "LFD_SiteInfluences_99": {
+      "type": "text"
+    },
+    "LFD_StyleofHome_32": {
+      "type": "json"
+    },
+    "LFD_StyleofHome_63": {
+      "type": "text"
+    },
+    "LFD_Suite_5": {
+      "type": "json"
+    },
+    "LFD_Suite_67": {
+      "type": "text"
+    },
+    "LFD_WaterSupply_70": {
+      "type": "text"
+    },
+    "LFD_WaterSupply_8": {
+      "type": "json"
+    },
+    "LM_Char10_11": {
+      "type": "text"
+    },
+    "LM_DateTime_35": {
+      "type": "date"
+    },
+    "LM_Dec_32": {
+      "type": "text"
+    },
+    "LM_bit_1": {
+      "type": "boolean"
+    },
+    "LM_bit_2": {
+      "type": "boolean"
+    },
+    "LM_bit_3": {
+      "type": "boolean"
+    },
+    "LM_bit_4": {
+      "type": "boolean"
+    },
+    "LM_bit_5": {
+      "type": "boolean"
+    },
+    "LM_bit_6": {
+      "type": "boolean"
+    },
+    "LM_bit_7": {
+      "type": "boolean"
+    },
+    "LM_char100_6": {
+      "type": "text"
+    },
+    "LM_char10_35": {
+      "type": "text"
+    },
+    "LM_char10_63": {
+      "type": "text"
+    },
+    "LM_char10_75": {
+      "type": "text"
+    },
+    "LM_char10_77": {
+      "type": "text"
+    },
+    "LM_char10_78": {
+      "type": "text"
+    },
+    "LM_char10_79": {
+      "type": "text"
+    },
+    "LM_char10_80": {
+      "type": "text"
+    },
+    "LM_char10_81": {
+      "type": "text"
+    },
+    "LM_char10_82": {
+      "type": "text"
+    },
+    "LM_char10_83": {
+      "type": "text"
+    },
+    "LM_char10_84": {
+      "type": "text"
+    },
+    "LM_char1_37": {
+      "type": "text"
+    },
+    "LM_char30_1": {
+      "type": "text"
+    },
+    "LM_char30_30": {
+      "type": "text"
+    },
+    "LM_char50_10": {
+      "type": "text"
+    },
+    "LM_char50_11": {
+      "type": "text"
+    },
+    "LM_char50_12": {
+      "type": "text"
+    },
+    "LM_char50_13": {
+      "type": "text"
+    },
+    "LM_char50_14": {
+      "type": "text"
+    },
+    "LM_char50_15": {
+      "type": "text"
+    },
+    "LM_char50_16": {
+      "type": "text"
+    },
+    "LM_char50_17": {
+      "type": "text"
+    },
+    "LM_char50_18": {
+      "type": "text"
+    },
+    "LM_char50_19": {
+      "type": "text"
+    },
+    "LM_char50_20": {
+      "type": "text"
+    },
+    "LM_char50_21": {
+      "type": "text"
+    },
+    "LM_char50_22": {
+      "type": "text"
+    },
+    "LM_char50_23": {
+      "type": "text"
+    },
+    "LM_char50_24": {
+      "type": "text"
+    },
+    "LM_char50_25": {
+      "type": "text"
+    },
+    "LM_char50_26": {
+      "type": "text"
+    },
+    "LM_char50_27": {
+      "type": "text"
+    },
+    "LM_char50_28": {
+      "type": "text"
+    },
+    "LM_char50_29": {
+      "type": "text"
+    },
+    "LM_char50_30": {
+      "type": "text"
+    },
+    "LM_char50_31": {
+      "type": "text"
+    },
+    "LM_char50_32": {
+      "type": "text"
+    },
+    "LM_char50_33": {
+      "type": "text"
+    },
+    "LM_char50_34": {
+      "type": "text"
+    },
+    "LM_char50_35": {
+      "type": "text"
+    },
+    "LM_char50_7": {
+      "type": "text"
+    },
+    "LO1_Abbreviation": {
+      "type": "text"
+    },
+    "LO1_Brokerage": {
+      "type": "text"
+    },
+    "LO1_Name": {
+      "type": "text"
+    },
+    "LO1_NationalAssocationID": {
+      "type": "text"
+    },
+    "LO1_Phone": {
+      "type": "text"
+    },
+    "LO1_URL": {
+      "type": "text"
+    },
+    "LO2_Abbreviation": {
+      "type": "text"
+    },
+    "LO2_Board": {
+      "type": "text"
+    },
+    "LO2_Email": {
+      "type": "text"
+    },
+    "LO2_Name": {
+      "type": "text"
+    },
+    "LO2_PHone": {
+      "type": "text"
+    },
+    "LO2_URL": {
+      "type": "text"
+    },
+    "LO3_Abbreviation": {
+      "type": "text"
+    },
+    "LO3_Board": {
+      "type": "text"
+    },
+    "LO3_Name": {
+      "type": "text"
+    },
+    "LO3_NationalAssociaitonID": {
+      "type": "text"
+    },
+    "LO3_Phone": {
+      "type": "text"
+    },
+    "LO3_URL": {
+      "type": "text"
+    },
+    "LO_NationalAssociationID": {
+      "type": "text"
+    },
+    "LR_remarks11": {
+      "type": "text"
+    },
+    "LR_remarks77": {
+      "type": "text"
+    },
+    "L_AccessibilityFeatures": {
+      "type": "text"
+    },
+    "L_AdditionalAccomodations": {
+      "type": "text"
+    },
+    "L_AdditionalRentSqFt": {
+      "type": "float"
+    },
+    "L_AdjustmentDate": {
+      "type": "date"
+    },
+    "L_Age": {
+      "type": "long"
+    },
+    "L_Appliances": {
+      "type": "text"
+    },
+    "L_AttachedGarageYN": {
+      "type": "boolean"
+    },
+    "L_AttachedYN": {
+      "type": "boolean"
+    },
+    "L_BBQNotes": {
+      "type": "text"
+    },
+    "L_BBQYN": {
+      "type": "boolean"
+    },
+    "L_BalconyAreaStrata": {
+      "type": "float"
+    },
+    "L_BasementHeightFeet": {
+      "type": "float"
+    },
+    "L_BasementHeightInches": {
+      "type": "float"
+    },
+    "L_Bath10_Level": {
+      "type": "text"
+    },
+    "L_Bath10_Pcs": {
+      "type": "float"
+    },
+    "L_Bath11_Level": {
+      "type": "text"
+    },
+    "L_Bath11_Pcs": {
+      "type": "float"
+    },
+    "L_Bath12_Level": {
+      "type": "text"
+    },
+    "L_Bath12_Pcs": {
+      "type": "float"
+    },
+    "L_Bath1_Ensuite": {
+      "type": "text"
+    },
+    "L_Bath1_Level": {
+      "type": "text"
+    },
+    "L_Bath1_Pcs": {
+      "type": "float"
+    },
+    "L_Bath2_Ensuite": {
+      "type": "string"
+    },
+    "L_Bath2_Level": {
+      "type": "string"
+    },
+    "L_Bath2_Pcs": {
+      "type": "float"
+    },
+    "L_Bath3_Ensuite": {
+      "type": "string"
+    },
+    "L_Bath3_Level": {
+      "type": "string"
+    },
+    "L_Bath3_Pcs": {
+      "type": "float"
+    },
+    "L_Bath4_Ensuite": {
+      "type": "string"
+    },
+    "L_Bath4_Level": {
+      "type": "string"
+    },
+    "L_Bath4_Pcs": {
+      "type": "float"
+    },
+    "L_Bath5_Ensuite": {
+      "type": "string"
+    },
+    "L_Bath5_Level": {
+      "type": "string"
+    },
+    "L_Bath5_Pcs": {
+      "type": "float"
+    },
+    "L_Bath6_Ensuite": {
+      "type": "string"
+    },
+    "L_Bath6_Level": {
+      "type": "string"
+    },
+    "L_Bath6_Pcs": {
+      "type": "float"
+    },
+    "L_Bath7_Ensuite": {
+      "type": "string"
+    },
+    "L_Bath7_Level": {
+      "type": "string"
+    },
+    "L_Bath7_Pcs": {
+      "type": "float"
+    },
+    "L_Bath8_Ensuite": {
+      "type": "string"
+    },
+    "L_Bath8_Level": {
+      "type": "string"
+    },
+    "L_Bath8_Pcs": {
+      "type": "float"
+    },
+    "L_Bath9_Level": {
+      "type": "string"
+    },
+    "L_Bath9_Pcs": {
+      "type": "float"
+    },
+    "L_BathEnsuite_Pcs": {
+      "type": "float"
+    },
+    "L_BathroomsCountLowerLevel": {
+      "type": "float"
+    },
+    "L_BathroomsCountOtherLevel": {
+      "type": "float"
+    },
+    "L_BathroomsCountSecondLevel": {
+      "type": "float"
+    },
+    "L_BathroomsCountThirdLevel": {
+      "type": "float"
+    },
+    "L_BedroomBasement": {
+      "type": "float"
+    },
+    "L_BedroomNOTBasement": {
+      "type": "float"
+    },
+    "L_BedroomTotal": {
+      "type": "float"
+    },
+    "L_BedroomsCountLowerLevel": {
+      "type": "float"
+    },
+    "L_BedroomsCountOtherLevel": {
+      "type": "float"
+    },
+    "L_BedroomsCountSecondLevel": {
+      "type": "float"
+    },
+    "L_BedroomsCountThirdLevel": {
+      "type": "float"
+    },
+    "L_BedroomsorDensTotal": {
+      "type": "float"
+    },
+    "L_BodyType": {
+      "type": "string"
+    },
+    "L_BuildingAreaPotential": {
+      "type": "float"
+    },
+    "L_BuildingAreaUnfinished": {
+      "type": "float"
+    },
+    "L_BuildingLevelType": {
+      "type": "string"
+    },
+    "L_ByLawInfractions": {
+      "type": "string"
+    },
+    "L_CancelDate": {
+      "type": "date"
+    },
+    "L_CancelProtectionDate": {
+      "type": "date"
+    },
+    "L_Cats": {
+      "type": "string"
+    },
+    "L_CeilingHeight": {
+      "type": "float"
+    },
+    "L_Class": {
+      "type": "keyword"
+    },
+    "L_Commision": {
+      "type": "string"
+    },
+    "L_ComplexName": {
+      "type": "string"
+    },
+    "L_Cooling": {
+      "type": "string"
+    },
+    "L_CoolingYN": {
+      "type": "boolean"
+    },
+    "L_CrawlHeight": {
+      "type": "string"
+    },
+    "L_DOH1": {
+      "type": "string"
+    },
+    "L_DepreciaitonReportYN": {
+      "type": "boolean"
+    },
+    "L_Directions": {
+      "type": "string"
+    },
+    "L_DisplayAddress": {
+      "type": "string"
+    },
+    "L_DisplayListing": {
+      "type": "string"
+    },
+    "L_Dogs": {
+      "type": "string"
+    },
+    "L_DoorFeatures": {
+      "type": "string"
+    },
+    "L_DrivewayYN": {
+      "type": "boolean"
+    },
+    "L_Electricity": {
+      "type": "string"
+    },
+    "L_Ensuite2PieceTotal": {
+      "type": "float"
+    },
+    "L_Ensuite3PieceTotal": {
+      "type": "float"
+    },
+    "L_Ensuite4PieceTotal": {
+      "type": "float"
+    },
+    "L_Exclusions": {
+      "type": "string"
+    },
+    "L_ExteriorFeatures": {
+      "type": "string"
+    },
+    "L_FeatureSheetURL": {
+      "type": "string"
+    },
+    "L_Features": {
+      "type": "json"
+    },
+    "L_FireSprinkler": {
+      "type": "string"
+    },
+    "L_Fireplace_Fuel": {
+      "type": "json"
+    },
+    "L_Fireplaces": {
+      "type": "float"
+    },
+    "L_FireplacesFeatures": {
+      "type": "string"
+    },
+    "L_FireplacesYN": {
+      "type": "boolean"
+    },
+    "L_FirstPhotoAddDt": {
+      "type": "date"
+    },
+    "L_FixturesRemoved_Desc": {
+      "type": "string"
+    },
+    "L_FixturesRemoved_YN": {
+      "type": "string"
+    },
+    "L_FixturesRented": {
+      "type": "string"
+    },
+    "L_FixturesRented_Desc": {
+      "type": "string"
+    },
+    "L_FloorArea_Basement": {
+      "type": "string"
+    },
+    "L_FloorArea_BelowMain": {
+      "type": "string"
+    },
+    "L_FloorArea_Finished_AboveMainFloor": {
+      "type": "string"
+    },
+    "L_FloorArea_GrantTotal": {
+      "type": "float"
+    },
+    "L_FloorArea_Main": {
+      "type": "float"
+    },
+    "L_FloorArea_Total": {
+      "type": "string"
+    },
+    "L_FloorArea_Unfinished": {
+      "type": "string"
+    },
+    "L_Floor_Finish": {
+      "type": "string"
+    },
+    "L_ForeignListingID": {
+      "type": "string"
+    },
+    "L_Frontage_Feet": {
+      "type": "string"
+    },
+    "L_Frontage_Metres": {
+      "type": "string"
+    },
+    "L_FullBaths": {
+      "type": "float"
+    },
+    "L_FullHeight": {
+      "type": "string"
+    },
+    "L_GST": {
+      "type": "string"
+    },
+    "L_GarageYN": {
+      "type": "boolean"
+    },
+    "L_GrossTaxes": {
+      "type": "string"
+    },
+    "L_HalfBaths": {
+      "type": "float"
+    },
+    "L_Inclusions": {
+      "type": "string"
+    },
+    "L_IncomePerAnnum": {
+      "type": "string"
+    },
+    "L_InternetRemakrs": {
+      "type": "string"
+    },
+    "L_KitchensLowerLevel": {
+      "type": "float"
+    },
+    "L_KitchensMainLevel": {
+      "type": "float"
+    },
+    "L_KitchensOtherLevel": {
+      "type": "float"
+    },
+    "L_KitchensSecondLevel": {
+      "type": "float"
+    },
+    "L_KitchensThirdLevel": {
+      "type": "float"
+    },
+    "L_KitchensTotal": {
+      "type": "float"
+    },
+    "L_LaundyFeatures": {
+      "type": "string"
+    },
+    "L_Layout": {
+      "type": "string"
+    },
+    "L_LeaaseTerm": {
+      "type": "string"
+    },
+    "L_LeasableArea": {
+      "type": "float"
+    },
+    "L_LeasableAreaUnits": {
+      "type": "string"
+    },
+    "L_LeaseAmount": {
+      "type": "float"
+    },
+    "L_LeaseAmountAdditional": {
+      "type": "float"
+    },
+    "L_LeaseExpiration": {
+      "type": "date"
+    },
+    "L_LeaseFrequency": {
+      "type": "string"
+    },
+    "L_LeaseHeldBy": {
+      "type": "string"
+    },
+    "L_LeaseRenewOption": {
+      "type": "boolean"
+    },
+    "L_LeaseYearsRemaining": {
+      "type": "float"
+    },
+    "L_LeasedEquipment": {
+      "type": "string"
+    },
+    "L_LegalDescription": {
+      "type": "string"
+    },
+    "L_LegalNonConformingYN": {
+      "type": "boolean"
+    },
+    "L_LessOperatingExpenses": {
+      "type": "string"
+    },
+    "L_ListingTerms": {
+      "type": "string"
+    },
+    "L_LivingArea": {
+      "type": "float"
+    },
+    "L_LivingAreaAuxBlgd": {
+      "type": "float"
+    },
+    "L_LivingAreaLower": {
+      "type": "float"
+    },
+    "L_LivingAreaMain": {
+      "type": "float"
+    },
+    "L_LivingAreaMainBldg": {
+      "type": "float"
+    },
+    "L_LivingAreaOther": {
+      "type": "float"
+    },
+    "L_LivingAreaSecond": {
+      "type": "float"
+    },
+    "L_LivingAreaThird": {
+      "type": "float"
+    },
+    "L_LivingAreaUnits": {
+      "type": "string"
+    },
+    "L_Locker": {
+      "type": "string"
+    },
+    "L_LotAreaStrataLCP": {
+      "type": "float"
+    },
+    "L_LotFeatures": {
+      "type": "string"
+    },
+    "L_LotShape": {
+      "type": "string"
+    },
+    "L_LotSizeDimensions": {
+      "type": "string"
+    },
+    "L_LotSize_Acres": {
+      "type": "string"
+    },
+    "L_LotSize_Area": {
+      "type": "float"
+    },
+    "L_LotSize_Hectares": {
+      "type": "string"
+    },
+    "L_LotSize_SqFt": {
+      "type": "string"
+    },
+    "L_LotSize_SqMtrs": {
+      "type": "string"
+    },
+    "L_LotSize_Units": {
+      "type": "string"
+    },
+    "L_MainLevelBathrooms": {
+      "type": "float"
+    },
+    "L_MainLevelBedrooms": {
+      "type": "float"
+    },
+    "L_ManagmentCompany": {
+      "type": "string"
+    },
+    "L_MeasurmentType": {
+      "type": "string"
+    },
+    "L_Municipality": {
+      "type": "string"
+    },
+    "L_NaturalGas": {
+      "type": "string"
+    },
+    "L_Net_OperatingIncome": {
+      "type": "string"
+    },
+    "L_NoFloorLevels": {
+      "type": "float"
+    },
+    "L_OperatingExpensePerSqFt": {
+      "type": "float"
+    },
+    "L_OriginalListPrice": {
+      "type": "float"
+    },
+    "L_OtherStructures": {
+      "type": "string"
+    },
+    "L_PID": {
+      "type": "string"
+    },
+    "L_ParkingAreaStrata": {
+      "type": "float"
+    },
+    "L_ParkingFeatures": {
+      "type": "string"
+    },
+    "L_ParkingOpenYN": {
+      "type": "boolean"
+    },
+    "L_ParkingStrataCommonSpaces": {
+      "type": "float"
+    },
+    "L_ParkingStrataLCPSpaces": {
+      "type": "float"
+    },
+    "L_ParkingStrataLotSpaces": {
+      "type": "float"
+    },
+    "L_Parking_Total": {
+      "type": "float"
+    },
+    "L_Parking_covered": {
+      "type": "float"
+    },
+    "L_Parking_total": {
+      "type": "float"
+    },
+    "L_PartHeight": {
+      "type": "string"
+    },
+    "L_PatioAreaStrata": {
+      "type": "float"
+    },
+    "L_PercTestDates": {
+      "type": "date"
+    },
+    "L_PetsAllowed": {
+      "type": "string"
+    },
+    "L_PetsNotes": {
+      "type": "string"
+    },
+    "L_PetsTotal": {
+      "type": "string"
+    },
+    "L_PreviousPrice": {
+      "type": "float"
+    },
+    "L_PriceIncludesGSTYN": {
+      "type": "boolean"
+    },
+    "L_ProcessedDate": {
+      "type": "date"
+    },
+    "L_PropertyCondition": {
+      "type": "string"
+    },
+    "L_PropertyDisclosure": {
+      "type": "string"
+    },
+    "L_Prospectus": {
+      "type": "string"
+    },
+    "L_PublicRemakrs": {
+      "type": "string"
+    },
+    "L_Region": {
+      "type": "string"
+    },
+    "L_Renovation": {
+      "type": "string"
+    },
+    "L_RentIncludes": {
+      "type": "string"
+    },
+    "L_Restrictions": {
+      "type": "string"
+    },
+    "L_RoadFrotageType": {
+      "type": "string"
+    },
+    "L_RoadSurfaceType": {
+      "type": "string"
+    },
+    "L_Room10_Dimension1": {
+      "type": "string"
+    },
+    "L_Room10_Dimension2": {
+      "type": "string"
+    },
+    "L_Room10_Level": {
+      "type": "string"
+    },
+    "L_Room10_Type": {
+      "type": "string"
+    },
+    "L_Room11_Demension2": {
+      "type": "string"
+    },
+    "L_Room11_Dimension1": {
+      "type": "string"
+    },
+    "L_Room11_Level": {
+      "type": "string"
+    },
+    "L_Room11_Type": {
+      "type": "string"
+    },
+    "L_Room12_Dimension1": {
+      "type": "string"
+    },
+    "L_Room12_Dimension2": {
+      "type": "string"
+    },
+    "L_Room12_Level": {
+      "type": "string"
+    },
+    "L_Room12_Type": {
+      "type": "string"
+    },
+    "L_Room13_Dimension1": {
+      "type": "string"
+    },
+    "L_Room13_Dimension2": {
+      "type": "string"
+    },
+    "L_Room13_Level": {
+      "type": "string"
+    },
+    "L_Room13_Type": {
+      "type": "string"
+    },
+    "L_Room14_Dimension1": {
+      "type": "string"
+    },
+    "L_Room14_Dimension2": {
+      "type": "string"
+    },
+    "L_Room14_Level": {
+      "type": "string"
+    },
+    "L_Room14_Type": {
+      "type": "string"
+    },
+    "L_Room15_Dimension1": {
+      "type": "string"
+    },
+    "L_Room15_Dimension2": {
+      "type": "string"
+    },
+    "L_Room15_Level": {
+      "type": "string"
+    },
+    "L_Room15_Type": {
+      "type": "string"
+    },
+    "L_Room16_Dimension1": {
+      "type": "string"
+    },
+    "L_Room16_Dimension2": {
+      "type": "string"
+    },
+    "L_Room16_Level": {
+      "type": "string"
+    },
+    "L_Room16_Type": {
+      "type": "string"
+    },
+    "L_Room17_Dimension1": {
+      "type": "string"
+    },
+    "L_Room17_Dimension2": {
+      "type": "string"
+    },
+    "L_Room17_Type": {
+      "type": "string"
+    },
+    "L_Room18_Dimension1": {
+      "type": "string"
+    },
+    "L_Room18_Dimension2": {
+      "type": "string"
+    },
+    "L_Room18_Level": {
+      "type": "string"
+    },
+    "L_Room18_Type": {
+      "type": "string"
+    },
+    "L_Room19_Dimension1": {
+      "type": "string"
+    },
+    "L_Room19_Dimension2": {
+      "type": "string"
+    },
+    "L_Room19_Level": {
+      "type": "string"
+    },
+    "L_Room19_Type": {
+      "type": "string"
+    },
+    "L_Room1_Dimension1": {
+      "type": "string"
+    },
+    "L_Room1_Dimension2": {
+      "type": "string"
+    },
+    "L_Room1_Level": {
+      "type": "string"
+    },
+    "L_Room1_Type": {
+      "type": "string"
+    },
+    "L_Room20_Dimension1": {
+      "type": "string"
+    },
+    "L_Room20_Dimension2": {
+      "type": "string"
+    },
+    "L_Room20_Level": {
+      "type": "string"
+    },
+    "L_Room20_Type": {
+      "type": "string"
+    },
+    "L_Room21_Dimension1": {
+      "type": "string"
+    },
+    "L_Room21_Dimension2": {
+      "type": "string"
+    },
+    "L_Room21_Level": {
+      "type": "string"
+    },
+    "L_Room22_Dimension1": {
+      "type": "string"
+    },
+    "L_Room22_Dimension2": {
+      "type": "string"
+    },
+    "L_Room22_Level": {
+      "type": "string"
+    },
+    "L_Room22_Type": {
+      "type": "string"
+    },
+    "L_Room23_Dimension1": {
+      "type": "string"
+    },
+    "L_Room23_Dimension2": {
+      "type": "string"
+    },
+    "L_Room23_Level": {
+      "type": "string"
+    },
+    "L_Room23_Type": {
+      "type": "string"
+    },
+    "L_Room24_Dimension1": {
+      "type": "string"
+    },
+    "L_Room24_Dimension2": {
+      "type": "string"
+    },
+    "L_Room24_Type": {
+      "type": "string"
+    },
+    "L_Room25_Dimension1": {
+      "type": "string"
+    },
+    "L_Room25_Dimension2": {
+      "type": "string"
+    },
+    "L_Room25_Level": {
+      "type": "string"
+    },
+    "L_Room25_Type": {
+      "type": "string"
+    },
+    "L_Room26_Dimension1": {
+      "type": "string"
+    },
+    "L_Room26_Dimension2": {
+      "type": "string"
+    },
+    "L_Room26_Level": {
+      "type": "string"
+    },
+    "L_Room26_Type": {
+      "type": "string"
+    },
+    "L_Room27_Dimension1": {
+      "type": "string"
+    },
+    "L_Room27_Dimension2": {
+      "type": "string"
+    },
+    "L_Room27_Level": {
+      "type": "string"
+    },
+    "L_Room27_Type": {
+      "type": "string"
+    },
+    "L_Room28_Dimension1": {
+      "type": "string"
+    },
+    "L_Room28_Dimension2": {
+      "type": "string"
+    },
+    "L_Room28_Level": {
+      "type": "string"
+    },
+    "L_Room28_Type": {
+      "type": "string"
+    },
+    "L_Room2_Dimension1": {
+      "type": "string"
+    },
+    "L_Room2_Dimension2": {
+      "type": "string"
+    },
+    "L_Room2_Level": {
+      "type": "string"
+    },
+    "L_Room2_Type": {
+      "type": "string"
+    },
+    "L_Room3_Dimension1": {
+      "type": "string"
+    },
+    "L_Room3_Dimension2": {
+      "type": "string"
+    },
+    "L_Room3_Level": {
+      "type": "string"
+    },
+    "L_Room3_Type": {
+      "type": "string"
+    },
+    "L_Room4_Dimension1": {
+      "type": "string"
+    },
+    "L_Room4_Dimension2": {
+      "type": "string"
+    },
+    "L_Room4_Level": {
+      "type": "string"
+    },
+    "L_Room4_Type": {
+      "type": "string"
+    },
+    "L_Room5_Dimension1": {
+      "type": "string"
+    },
+    "L_Room5_Dimension2": {
+      "type": "string"
+    },
+    "L_Room5_Level": {
+      "type": "string"
+    },
+    "L_Room5_Type": {
+      "type": "string"
+    },
+    "L_Room6_Dimension1": {
+      "type": "string"
+    },
+    "L_Room6_Dimension2": {
+      "type": "string"
+    },
+    "L_Room6_Level": {
+      "type": "string"
+    },
+    "L_Room6_Type": {
+      "type": "string"
+    },
+    "L_Room7_Dimension1": {
+      "type": "string"
+    },
+    "L_Room7_Dimension2": {
+      "type": "string"
+    },
+    "L_Room7_Level": {
+      "type": "string"
+    },
+    "L_Room7_Type": {
+      "type": "string"
+    },
+    "L_Room8_Dimension1": {
+      "type": "string"
+    },
+    "L_Room8_Dimension2": {
+      "type": "string"
+    },
+    "L_Room8_Level": {
+      "type": "string"
+    },
+    "L_Room8_Type": {
+      "type": "string"
+    },
+    "L_Room9_Dimension1": {
+      "type": "string"
+    },
+    "L_Room9_Dimension2": {
+      "type": "string"
+    },
+    "L_Room9_Level": {
+      "type": "string"
+    },
+    "L_Room9_Type": {
+      "type": "string"
+    },
+    "L_RoomUnfinishedCount": {
+      "type": "float"
+    },
+    "L_RoomsTotal": {
+      "type": "float"
+    },
+    "L_RoughedinFireplace": {
+      "type": "float"
+    },
+    "L_SaleRent": {
+      "type": "string"
+    },
+    "L_SalesBrochureURL": {
+      "type": "string"
+    },
+    "L_SanitarySewer": {
+      "type": "string"
+    },
+    "L_SellingOffice1": {
+      "type": "float"
+    },
+    "L_SellingOffice2": {
+      "type": "float"
+    },
+    "L_SeniorCommunityYN": {
+      "type": "boolean"
+    },
+    "L_Sewer": {
+      "type": "string"
+    },
+    "L_ShortRegionCode": {
+      "type": "string"
+    },
+    "L_SignOnPropertyYN": {
+      "type": "boolean"
+    },
+    "L_SmokeDetectors": {
+      "type": "string"
+    },
+    "L_SmokingBylaw": {
+      "type": "string"
+    },
+    "L_SmokingBylawNotes": {
+      "type": "string"
+    },
+    "L_Sold_PricePerSqFt": {
+      "type": "string"
+    },
+    "L_SoundBiteURL": {
+      "type": "string"
+    },
+    "L_StatusDate": {
+      "type": "date"
+    },
+    "L_StorageAreaStrata": {
+      "type": "float"
+    },
+    "L_Stories": {
+      "type": "float"
+    },
+    "L_StormSewer": {
+      "type": "string"
+    },
+    "L_StrataFee": {
+      "type": "string"
+    },
+    "L_StrataFeeFrequency": {
+      "type": "string"
+    },
+    "L_StrataLotsIncludes": {
+      "type": "string"
+    },
+    "L_StrataPlanType": {
+      "type": "string"
+    },
+    "L_StrataYN": {
+      "type": "boolean"
+    },
+    "L_SubareaCommunity": {
+      "type": "string"
+    },
+    "L_SubdividableArea": {
+      "type": "boolean"
+    },
+    "L_SubdividableAreaMax": {
+      "type": "float"
+    },
+    "L_SubdividableAreaMin": {
+      "type": "float"
+    },
+    "L_SubdivisionName": {
+      "type": "string"
+    },
+    "L_TaxJurisdiction": {
+      "type": "string"
+    },
+    "L_TelephoneService": {
+      "type": "string"
+    },
+    "L_Total1BedroomUnits": {
+      "type": "float"
+    },
+    "L_Total2BedroomUnits": {
+      "type": "float"
+    },
+    "L_Total3BedroomUnits": {
+      "type": "float"
+    },
+    "L_TotalBaths": {
+      "type": "float"
+    },
+    "L_TotalOtherUnits": {
+      "type": "float"
+    },
+    "L_TotalRentalsAllowed": {
+      "type": "string"
+    },
+    "L_TotalRentalsAllowedNotes": {
+      "type": "string"
+    },
+    "L_TotalStudios": {
+      "type": "float"
+    },
+    "L_TotalUnits": {
+      "type": "float"
+    },
+    "L_Utilities": {
+      "type": "string"
+    },
+    "L_ValueAssessed": {
+      "type": "float"
+    },
+    "L_ViewYN": {
+      "type": "boolean"
+    },
+    "L_View_Desc": {
+      "type": "string"
+    },
+    "L_VirtualTourURL": {
+      "type": "string"
+    },
+    "L_VirtualTourURLextra": {
+      "type": "string"
+    },
+    "L_WarrantyYN": {
+      "type": "boolean"
+    },
+    "L_WaterSource": {
+      "type": "string"
+    },
+    "L_WaterfrontFeatures": {
+      "type": "string"
+    },
+    "L_WindowFeatures": {
+      "type": "string"
+    },
+    "L_YearBuilt": {
+      "type": "float"
+    },
+    "L_room21_Type": {
+      "type": "string"
+    },
+    "LandLease_ExpYear": {
+      "type": "float"
+    },
+    "LandTitle": {
+      "type": "string"
+    },
+    "Last_Photo_updt": {
+      "type": "date"
+    },
+    "ListAgent1": {
+      "type": "string"
+    },
+    "ListAgent2": {
+      "type": "float"
+    },
+    "ListAgent3": {
+      "type": "float"
+    },
+    "ListAgentAOR": {
+      "type": "string"
+    },
+    "ListAgentKeyNumeric": {
+      "type": "float"
+    },
+    "ListAgentOfficePhone": {
+      "type": "string"
+    },
+    "ListOffice1": {
+      "type": "float"
+    },
+    "ListOffice2": {
+      "type": "float"
+    },
+    "ListOffice3": {
+      "type": "float"
+    },
+    "ListOfficeKeyNumeric": {
+      "type": "float"
+    },
+    "ListingContractDate": {
+      "type": "date"
+    },
+    "ListingDate": {
+      "type": "date"
+    },
+    "ListingID": {
+      "type": "float"
+    },
+    "ListingKey": {
+      "type": "string"
+    },
+    "ListingKeyNumeric": {
+      "type": "float"
+    },
+    "MLSAreaMajor": {
+      "type": "string"
+    },
+    "MLSAreaMinor": {
+      "type": "string"
+    },
+    "MLS_ID": {
+      "type": "string"
+    },
+    "MajorChangeTimestamp": {
+      "type": "date"
+    },
+    "MajorChangeType": {
+      "type": "string"
+    },
+    "Mgmt_Phone": {
+      "type": "string"
+    },
+    "ModificationTimestamp": {
+      "type": "date"
+    },
+    "None": {
+      "type": "string"
+    },
+    "NotInclTax_Dyking": {
+      "type": "string"
+    },
+    "NotInclTax_Garbage": {
+      "type": "string"
+    },
+    "NotInclTax_Other": {
+      "type": "string"
+    },
+    "NotInclTax_Sewer": {
+      "type": "string"
+    },
+    "NotInclTax_Water": {
+      "type": "string"
+    },
+    "NumberofBuildings": {
+      "type": "float"
+    },
+    "NumberofUnitsInCommunity": {
+      "type": "float"
+    },
+    "NumberofUnitsTotal": {
+      "type": "float"
+    },
+    "OffMarketDate": {
+      "type": "date"
+    },
+    "OriginalEntryTimestamp": {
+      "type": "date"
+    },
+    "OriginalPrice": {
+      "type": "float"
+    },
+    "OriginatingSystemID": {
+      "type": "string"
+    },
+    "OriginatingSystemKey": {
+      "type": "string"
+    },
+    "OriginatingSystemName": {
+      "type": "string"
+    },
+    "PAD_Rental": {
+      "type": "string"
+    },
+    "Permitted_Land_Use": {
+      "type": "string"
+    },
+    "PhotosChangeTimestamp": {
+      "type": "date"
+    },
+    "PhotosCount": {
+      "type": "float"
+    },
+    "PictureCount": {
+      "type": "float"
+    },
+    "PostalCode_Zip": {
+      "type": "string"
+    },
+    "PriceChangeTimestamp": {
+      "type": "date"
+    },
+    "PricePerSQFT": {
+      "type": "string"
+    },
+    "PropertyDisclosure": {
+      "type": "string"
+    },
+    "PropertyType": {
+      "type": "string"
+    },
+    "Province_State": {
+      "type": "string"
+    },
+    "PurchaseContractDate": {
+      "type": "date"
+    },
+    "RainScreen": {
+      "type": "string"
+    },
+    "Remarks": {
+      "type": "string"
+    },
+    "Reno_Year": {
+      "type": "float"
+    },
+    "RestrictedAge": {
+      "type": "string"
+    },
+    "RestrictedAgeNotes": {
+      "type": "string"
+    },
+    "RoughedInPlumbing": {
+      "type": "string"
+    },
+    "SO1_FullName": {
+      "type": "string"
+    },
+    "SO1_ShortName": {
+      "type": "string"
+    },
+    "SO2_FullName": {
+      "type": "string"
+    },
+    "SO2_ShortName": {
+      "type": "string"
+    },
+    "SO3_FullName": {
+      "type": "string"
+    },
+    "SO3_ShortName": {
+      "type": "string"
+    },
+    "SP_LP": {
+      "type": "string"
+    },
+    "SP_OLP": {
+      "type": "string"
+    },
+    "SoldPrice": {
+      "type": "float"
+    },
+    "SourceSystemKey": {
+      "type": "string"
+    },
+    "Status": {
+      "type": "string"
+    },
+    "StatusChangeTimestamp": {
+      "type": "date"
+    },
+    "StreetDesignationId": {
+      "type": "string"
+    },
+    "StreetDirSuffix": {
+      "type": "string"
+    },
+    "StreetNumberNumeric": {
+      "type": "float"
+    },
+    "StreetSuffix": {
+      "type": "string"
+    },
+    "SyndicateTo": {
+      "type": "string"
+    },
+    "SyndicationRemarks": {
+      "type": "string"
+    },
+    "TaxBookNumber": {
+      "type": "string"
+    },
+    "TaxUtilitiesInclude": {
+      "type": "string"
+    },
+    "Trees": {
+      "type": "string"
+    },
+    "Type": {
+      "type": "keyword"
+    },
+    "UnparsedAddress": {
+      "type": "string"
+    },
+    "UpdateDate": {
+      "type": "date"
+    },
+    "VIVA_AdditionalPhotosURL": {
+      "type": "string"
+    },
+    "VIVA_AssociationFeeYear": {
+      "type": "float"
+    },
+    "VIVA_BuyerAgentNationalAssociationId": {
+      "type": "string"
+    },
+    "VIVA_BuyerOfficeNationalAssociationId": {
+      "type": "string"
+    },
+    "VIVA_BuyerOrigin": {
+      "type": "string"
+    },
+    "VIVA_CoBuyerAgent2AOR": {
+      "type": "string"
+    },
+    "VIVA_CoBuyerAgent2DirectPhone": {
+      "type": "string"
+    },
+    "VIVA_CoBuyerAgent2Email": {
+      "type": "string"
+    },
+    "VIVA_CoBuyerAgent2FullName": {
+      "type": "string"
+    },
+    "VIVA_CoBuyerAgent2KeyNumeric": {
+      "type": "float"
+    },
+    "VIVA_CoBuyerAgent2MlsId": {
+      "type": "string"
+    },
+    "VIVA_CoBuyerAgent2NationalAssociationId": {
+      "type": "string"
+    },
+    "VIVA_CoBuyerAgentNationalAssociationId": {
+      "type": "string"
+    },
+    "VIVA_CoBuyerOffice2KeyNumeric": {
+      "type": "float"
+    },
+    "VIVA_CoBuyerOffice2MlsId": {
+      "type": "string"
+    },
+    "VIVA_CoBuyerOffice2Name": {
+      "type": "string"
+    },
+    "VIVA_CoBuyerOffice2NationalAssociationId": {
+      "type": "string"
+    },
+    "VIVA_CoBuyerOffice2Phone": {
+      "type": "string"
+    },
+    "VIVA_CoBuyerOfficeNationalAssociationId": {
+      "type": "string"
+    },
+    "VIVA_CoListAgent2KeyNumeric": {
+      "type": "float"
+    },
+    "VIVA_CoListOffice2KeyNumeric": {
+      "type": "float"
+    },
+    "VIVA_CurrentPrice": {
+      "type": "float"
+    },
+    "VIVA_LegacyListingId": {
+      "type": "string"
+    },
+    "VIVA_MHRNumber": {
+      "type": "string"
+    },
+    "VIVA_MlsMajorChangeType": {
+      "type": "string"
+    },
+    "VIVA_OfferAcceptanceDate": {
+      "type": "date"
+    },
+    "VIVA_OriginatingSystemTimestamp": {
+      "type": "date"
+    },
+    "VIVA_ProjectedCloseDate": {
+      "type": "date"
+    },
+    "VIVA_PurchaseContractTimestamp": {
+      "type": "date"
+    },
+    "VIVA_RoomCount": {
+      "type": "float"
+    },
+    "VIVA_TaxAssessedYear": {
+      "type": "float"
+    },
+    "VIVA_VirtualTour2URLBranded": {
+      "type": "string"
+    },
+    "VT_ExtVTourURL1": {
+      "type": "string"
+    },
+    "VT_ExtVTourURL2": {
+      "type": "string"
+    },
+    "VT_ExtVTourURL3": {
+      "type": "string"
+    },
+    "ViewDesc": {
+      "type": "string"
+    },
+    "WaterFrontYN": {
+      "type": "boolean"
+    },
+    "Zoning": {
+      "type": "string"
+    },
+    "ZoningDescription": {
+      "type": "string"
+    },
+    "lat": {
+      "type": "float"
+    },
+    "lng": {
+      "type": "float"
+    },
+    "photos": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

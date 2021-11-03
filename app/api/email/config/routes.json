@@ -1,0 +1,20 @@
+{
+  "routes": [
+    {
+      "method": "POST",
+      "path": "/email/send",
+      "handler": "email.send",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/email/send-templated-email",
+      "handler": "email.sendTemplatedEmail",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

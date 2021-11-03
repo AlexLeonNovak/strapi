@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/saved-searches",
+      "handler": "saved-search.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/saved-searches/count",
+      "handler": "saved-search.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/saved-searches/:id",
+      "handler": "saved-search.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/saved-searches",
+      "handler": "saved-search.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/saved-searches/:id",
+      "handler": "saved-search.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/saved-searches/:id",
+      "handler": "saved-search.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
