@@ -1,8 +1,8 @@
 {
   "kind": "singleType",
-  "collectionName": "aparttments",
+  "collectionName": "agents",
   "info": {
-    "name": "Saved Homes",
+    "name": "Agents",
     "description": ""
   },
   "options": {
@@ -11,10 +11,10 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "List": {
+    "Agent": {
       "type": "component",
       "repeatable": true,
-      "component": "apartments.apatment"
+      "component": "agents.agent"
     }
   }
 }

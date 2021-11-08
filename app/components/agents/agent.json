@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_agents_agents",
+  "info": {
+    "name": "Agent",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "profile": {
+      "model": "profile"
+    },
+    "Clients": {
+      "type": "component",
+      "repeatable": true,
+      "component": "clients.client"
+    }
+  }
+}
