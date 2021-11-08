@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_apatments_apatments",
+  "info": {
+    "name": "Apartment",
+    "icon": "clinic-medical",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Address": {
+      "type": "string"
+    },
+    "Price": {
+      "type": "decimal"
+    },
+    "Area": {
+      "type": "integer"
+    },
+    "Beds": {
+      "type": "integer"
+    },
+    "Baths": {
+      "type": "integer"
+    },
+    "Build": {
+      "type": "integer"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "Medias": {
+      "type": "component",
+      "repeatable": true,
+      "component": "apartments.meedias"
+    },
+    "apartment_types": {
+      "collection": "apartment-types"
+    }
+  }
+}

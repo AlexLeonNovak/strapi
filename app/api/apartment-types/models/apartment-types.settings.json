@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "apartment_types",
+  "info": {
+    "name": "Apartment types"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    }
+  }
+}

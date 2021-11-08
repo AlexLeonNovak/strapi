@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/aparttments",
+      "handler": "aparttments.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/aparttments",
+      "handler": "aparttments.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/aparttments",
+      "handler": "aparttments.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_clients_clients",
+  "info": {
+    "name": "Client",
+    "icon": "address-book"
+  },
+  "options": {},
+  "attributes": {
+    "user": {
+      "unique": true,
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "birthday": {
+      "type": "date"
+    }
+  }
+}

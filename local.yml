@@ -26,4 +26,4 @@ services:
       - ./data:/var/lib/postgresql/data
       - ./dumps:/dumps
     ports:
-      - "5432:5432"
+      - "6432:5432"

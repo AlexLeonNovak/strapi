@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "aparttments",
+  "info": {
+    "name": "Apartments",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "List": {
+      "type": "component",
+      "repeatable": true,
+      "component": "apartments.apatment"
+    }
+  }
+}

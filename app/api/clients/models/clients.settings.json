@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "clients",
+  "info": {
+    "name": "Clients"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Client": {
+      "type": "component",
+      "repeatable": true,
+      "component": "clients.client"
+    }
+  }
+}
